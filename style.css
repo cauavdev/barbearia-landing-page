@@ -97,7 +97,7 @@ section {
 
 .content h3 {
     color: #fff;
-    font-size: 7.5rem;
+    font-size: clamp(3rem, 10vw, 7.5rem); 
     font-family: "Bebas Neue", sans-serif;
     letter-spacing: 2.5px;
     
@@ -108,4 +108,28 @@ section {
     font-weight: 200;
     line-height: 1.6;
     padding: 1rem 0;
+}
+
+/* Mobile  */
+@media (max-width: 768px) {
+
+    .logo img {
+        width: 120px;
+        height: auto; 
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+    }
+
+    .icons img {
+        margin: 0 0.6rem;
+        width: 24px;
+        height: 24px;
+    }
 }
