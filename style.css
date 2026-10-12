@@ -3,7 +3,7 @@
     --black: #13131a;
     --white: #fff;
     --bg: #010103;
-    
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
     font-size: 14px;
 }
 
@@ -34,6 +34,8 @@ section {
     right: 0;
     z-index: 99;
     border-bottom: var(--border);
+    background: rgba(1, 1, 3, 0.6);
+    backdrop-filter: blur(10px);
 }
 
 .header section {
@@ -97,7 +99,7 @@ section {
     color: #fff;
     font-size: 7.5rem;
     font-family: "Bebas Neue", sans-serif;
-    letter-spacing: 3px;
+    letter-spacing: 2.5px;
     
 }
 .content p {
