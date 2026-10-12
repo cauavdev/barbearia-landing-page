@@ -3,7 +3,7 @@
     --black: #13131a;
     --white: #fff;
     --bg: #010103;
-    --border: 0.1rem solid rgba(255, 255, 255,0.3);
+    
     font-size: 14px;
 }
 
@@ -13,7 +13,6 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: 0.2s linear;
     font-family: "Montserrat", sans-serif;
 }
@@ -65,4 +64,46 @@ section {
 
 .icons img:hover {
     transform: scale(1.15);
+}
+
+.btn {
+    background: var(--main-color);
+    color: #fff;
+    padding: 1rem 3rem;
+    font-size: 1.15rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.home-container {
+    background: url("./img/bg.png") center / cover no-repeat;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-container section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content {
+    max-width: 60rem;
+}
+
+.content h3 {
+    color: #fff;
+    font-size: 7.5rem;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
+    
+}
+.content p {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 1.6;
+    padding: 1rem 0;
 }
