@@ -105,9 +105,50 @@ section {
 .content p {
     color: #fff;
     font-size: 1.5rem;
-    font-weight: 200;
+    font-weight: 220;
     line-height: 1.6;
     padding: 1rem 0;
+}
+
+.servicos-container {
+    background: #f5f3ee;
+    min-height: 100vh;
+}
+
+.servicos-container section {
+    padding-top: 12rem;
+}
+
+.servicos-container .title {
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif; 
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    color: var(--black);
+}
+
+.servicos-container .subtitle {
+    text-align: center;
+    color: #4a4949;
+    margin-top: 0.5rem;
+}
+
+.servicos-row {
+    display: flex;
+    align-items: center;
+    gap: 3rem;  
+    margin-top: 3rem;
+}
+
+.servicos-lista,
+.servicos-imagem {
+    flex: 1;            
+}
+
+.servicos-imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Mobile  */
@@ -136,5 +177,23 @@ section {
     .content p {
         font-size: 1.1rem;
         line-height: 1.5;
+    }
+
+    /* Serviços no celular: as colunas viram uma embaixo da outra */
+    .servicos-row {
+        flex-direction: column; /* empilha, em vez de lado a lado */
+        align-items: stretch;   /* cada item ocupa a largura toda */
+        gap: 1.5rem;
+    }
+
+    .servicos-lista,
+    .servicos-imagem {
+        flex: none;             /* cancela o "metade e metade", que não faz sentido em coluna */
+    }
+
+    .servicos-imagem {
+        order: -1;              /* joga a imagem pra cima da lista */
+        width: 70%;             /* 70% da largura da tela */
+        margin: 0 auto;         /* centraliza */
     }
 }
