@@ -151,6 +151,62 @@ section {
     display: block;
 }
 
+.categoria {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    color: var(--black);
+    margin: 2rem 0 0.5rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--main-color); /* linha dourada embaixo */
+}
+
+.categoria:first-child {
+    margin-top: 0; 
+}
+
+
+.lista-servicos {
+    list-style: none; /* tira as bolinhas */
+}
+
+.lista-servicos li {
+    display: flex; /* nome, tempo e preço lado a lado */
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #ddd; /* linha cinza entre os serviços */
+}
+
+.servico-nome {
+    flex: 1;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.servico-tempo {
+    color: #777;
+    font-size: 0.9rem;
+    white-space: nowrap;          
+}
+
+.servico-preco {
+    color: var(--black);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.etiqueta {
+    display: inline-block;
+    margin-left: 0.4rem;
+    padding: 0.15rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #7a5d12; 
+    background: rgba(213, 167, 61, 0.2);
+    white-space: nowrap;
+}
+
 /* Mobile  */
 @media (max-width: 768px) {
 
