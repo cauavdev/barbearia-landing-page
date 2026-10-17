@@ -160,7 +160,7 @@ section {
 
 .cartao-horario {
     background: var(--black);
-    border: 1px solid var(--main-color);
+    border: 2px solid var(--main-color);
     padding: 2rem;
     margin-top: 1.5rem;
 }
