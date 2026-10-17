@@ -181,6 +181,7 @@ section {
     font-family: "Bebas Neue", sans-serif;
     font-size: 1.8rem;
     letter-spacing: 1px;
+    text-align: center;
     color: var(--main-color);
     margin-bottom: 1rem;
 }
@@ -287,10 +288,7 @@ section {
         flex: none;             /* cancela o "metade e metade", que não faz sentido em coluna */
     }
 
-    .servicos-imagem {
-        display: none;
-        order: -1;              /* joga a imagem pra cima da lista */
-        width: 70%;             /* 70% da largura da tela */
-        margin: 0 auto;         /* centraliza */
-    }
+    .servicos-imagem img {
+    display: none;
+}
 }
