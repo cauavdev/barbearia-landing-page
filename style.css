@@ -248,6 +248,7 @@ section {
     }
 
     .servicos-imagem {
+        display: none;
         order: -1;              /* joga a imagem pra cima da lista */
         width: 70%;             /* 70% da largura da tela */
         margin: 0 auto;         /* centraliza */
