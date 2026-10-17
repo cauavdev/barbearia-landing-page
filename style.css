@@ -185,6 +185,12 @@ section {
     margin-bottom: 1rem;
 }
 
+.cartao-btn {
+    display: block;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
 .categoria {
     font-family: "Bebas Neue", sans-serif;
     font-size: 1.8rem;
