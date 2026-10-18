@@ -471,7 +471,7 @@ a.sobre-item:hover {
 
 .btn-login {
     display: inline-flex;
-    align-items: center;              
+    align-items: center;
     width: 120px;
     aspect-ratio: 600 / 261;
     background: url("./img/login.png") center / 100% 100% no-repeat;
@@ -480,7 +480,6 @@ a.sobre-item:hover {
     font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 1px;
-    vertical-align: middle;
 }
 
 .btn-login span {
@@ -489,8 +488,26 @@ a.sobre-item:hover {
 }
 
 .btn-login:hover {
-    color: var(--main-color);
-    filter: drop-shadow(0 0 6px rgba(213, 167, 61, 0.6));
+    background-image: url("./img/login2.png");
+    color: var(--bg);
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    margin-left: 0.8rem;
+    background: none;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    height: 3px;
+    background: var(--white);
+    border-radius: 2px;
 }
 
 /* Mobile  */
