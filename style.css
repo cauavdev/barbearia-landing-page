@@ -528,9 +528,9 @@ a.sobre-item:hover {
     }
 
     .icons img {
-        margin: 0 0.6rem;
-        width: 24px;
-        height: 24px;
+        margin: 0 0.3rem;
+        width: 22px;
+        height: 22px;
     }
 
     .content p {
@@ -579,7 +579,18 @@ a.sobre-item:hover {
     }
 
     .btn-login {
-        width: 90px;
-        font-size: 0.7rem;
+        width: 80px;
+        font-size: 0.65rem;
+        margin-left: 0.3rem;
+    }
+
+    .menu-toggle {
+        display: flex;
+        margin-left: 0.5rem;;
+    }
+
+    .header section {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
