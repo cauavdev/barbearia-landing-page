@@ -308,7 +308,7 @@ section {
     font-family: "Alfa Slab One", serif;
     font-size: 8vh;
     line-height: 0.9;
-    color: #444444c9;
+    color: #44444473;
     pointer-events: none;
     user-select: none;
 }
@@ -396,4 +396,21 @@ a.sobre-item:hover {
     .servicos-grupo:nth-child(4) {
     break-after: auto;
     }
+
+    .sobre-container section {
+    flex-direction: column;
+    min-height: auto;
+    gap: 0;
+    padding-top: 7rem;
+    }
+
+    .sobre-coluna {
+        flex: none;
+        width: 100%;
+    }
+
+    .sobre-celular {
+        display: none;
+    }
+
 }
