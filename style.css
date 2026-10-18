@@ -60,6 +60,11 @@ section {
     font-size: 1.15rem;
 }
 
+.icons {
+    display: flex;
+    align-items: center;
+}
+
 .icons img {
     margin: 1rem;
     cursor: pointer;
@@ -464,6 +469,30 @@ a.sobre-item:hover {
     font-size: 0.9rem;
 }
 
+.btn-login {
+    display: inline-flex;
+    align-items: center;              
+    width: 120px;
+    aspect-ratio: 600 / 261;
+    background: url("./img/login.png") center / 100% 100% no-repeat;
+    margin-left: 0.5rem;
+    color: var(--white);
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    vertical-align: middle;
+}
+
+.btn-login span {
+    width: 71%;
+    text-align: center;
+}
+
+.btn-login:hover {
+    color: var(--main-color);
+    filter: drop-shadow(0 0 6px rgba(213, 167, 61, 0.6));
+}
+
 /* Mobile  */
 @media (max-width: 768px) {
 
@@ -530,5 +559,10 @@ a.sobre-item:hover {
 
     .footer-copy {
         margin-top: 2rem;
+    }
+
+    .btn-login {
+        width: 90px;
+        font-size: 0.7rem;
     }
 }
