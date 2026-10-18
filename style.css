@@ -147,22 +147,28 @@ section {
     margin-top: 3rem;
 }
 
-.servicos-lista,
-.servicos-imagem {
-    flex: 1;            
+.servicos-lista {
+    flex: 1;
+    column-count: 2;
+    column-gap: 3rem;            
 }
 
-.servicos-imagem img {
-    width: 100%;
-    height: auto;
-    display: block;
+.servicos-grupo {
+    break-inside: avoid;
+    margin-bottom: 2rem;
+}
+
+.servicos-grupo:nth-child(4) {
+    break-after: column;
 }
 
 .cartao-horario {
-    background: var(--black);
+    background: var(--white);
     border: 2px solid var(--main-color);
     padding: 2rem;
     margin-top: 1.5rem;
+    max-width: 600px; 
+    margin: 3rem auto 0;
 }
 
 .cartao-lista {
@@ -173,11 +179,11 @@ section {
     display: flex;
     justify-content: space-between;
     padding: 0.8rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid var(--black);
 }
 
 .cartao-lista span {
-    color: var(--white);
+    color: var(--black);
 }
 
 .cartao-lista span:first-child {
@@ -189,7 +195,7 @@ section {
     font-size: 1.8rem;
     letter-spacing: 2.1px;
     text-align: center;
-    color: var(--main-color);
+    color: var(--black);
     margin-bottom: 1rem;
 }
 
@@ -283,19 +289,15 @@ section {
         line-height: 1.5;
     }
 
-    /* Serviços no celular: as colunas viram uma embaixo da outra */
-    .servicos-row {
-        flex-direction: column; /* empilha, em vez de lado a lado */
-        align-items: stretch;   /* cada item ocupa a largura toda */
-        gap: 1.5rem;
-    }
-
-    .servicos-lista,
-    .servicos-imagem {
-        flex: none;             /* cancela o "metade e metade", que não faz sentido em coluna */
+    .servicos-lista {
+    column-count: 1;
     }
 
     .servicos-imagem img {
     display: none;
-}
+    }
+
+    .servicos-grupo:nth-child(4) {
+    break-after: auto;
+    }
 }
