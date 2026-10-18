@@ -261,6 +261,32 @@ section {
     white-space: nowrap;
 }
 
+.sobre-container {
+    background: var(--bg);
+}
+
+.sobre-container section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    min-height: 100vh;
+}
+
+.sobre-coluna {
+    flex: 1;
+}
+
+.sobre-celular {
+    flex: 1.2;
+}
+
+.sobre-celular img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* Mobile  */
 @media (max-width: 768px) {
 
