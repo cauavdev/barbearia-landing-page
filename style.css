@@ -364,6 +364,32 @@ a.sobre-item:hover {
     color: var(--main-color);
 }
 
+.sobre-pagamento {
+    margin: 1.5rem 0 1rem;
+}
+
+.sobre-subtitulo {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 1.5px;
+    color: var(--main-color);
+    margin-bottom: 0.8rem;
+}
+
+.pagamento-lista {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.pagamento-lista li {
+    padding: 0.4rem 0.9rem;
+    border: 1px solid var(--main-color);
+    color: var(--white);
+    font-size: 0.9rem;
+}
+
 .avaliacoes-container {
     background: var(--bg);
 }
@@ -520,6 +546,25 @@ a.sobre-item:hover {
 
     .navbar {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        right: 0%;
+        flex-direction: column;
+        background: rgba(1, 1, 3, 0.95);
+        padding: 1rem 2rem;
+        border-bottom: var(--border);
+    }
+
+    .navbar.ativo {
+        display: flex;
+    }
+
+    .navbar a {
+        margin: 0;
+        padding: 1rem 0;
+        font-size: 1.1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .icons {
