@@ -275,6 +275,8 @@ section {
 
 .sobre-coluna {
     flex: 1;
+    position: relative;
+    z-index: 2;
 }
 
 .sobre-celular {
@@ -285,6 +287,74 @@ section {
     width: 100%;
     height: auto;
     display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.sobre-celular {
+    flex: 1.6;
+    position: relative;
+}
+
+.sobre-marca {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Alfa Slab One", serif;
+    font-size: 8vh;
+    line-height: 0.9;
+    color: #444444c9;
+    pointer-events: none;
+    user-select: none;
+}
+
+.sobre-marca span {
+    font-family: "Alfa Slab One", serif;
+}
+
+.sobre-marca span:nth-child(1) {
+    font-size: 1em;
+}
+
+.sobre-marca span:nth-child(2) {
+    font-size: 1.8em;
+}
+
+.sobre-marca span:nth-child(3) {
+    font-size: 2.4em;
+}
+
+.sobre-titulo {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.sobre-texto {
+    color: #c9c9c9;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.sobre-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--white);
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+a.sobre-item:hover {
+    color: var(--main-color);
 }
 
 /* Mobile  */
