@@ -544,6 +544,43 @@ a.sobre-item:hover {
     border-radius: 2px;
 }
 
+.agendar-container {
+    background: var(--bg);
+    min-height: 100vh;
+}
+
+.agendar-container section {
+    max-width: 800px;
+    padding-top: 12rem;
+    padding-bottom: 5rem;
+}
+
+.agendar-titulo {
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    color: var(--white);
+}
+
+.agendar-subtitulo {
+    text-align: center;
+    color: #c9c9c9;
+    margin: 0.5rem 0 3rem;
+}
+
+.agendar-card {
+    background: var(--black);
+    border: var(--border);
+    border-top: 3px solid var(--main-color);
+    padding: 2rem;
+}
+
+.agendar-vazio {
+    color: #888;
+    text-align: center;
+}
+
 /* Mobile  */
 @media (max-width: 768px) {
 
