@@ -581,6 +581,59 @@ a.sobre-item:hover {
     text-align: center;
 }
 
+.passo-titulo {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    color: var(--white);
+}
+
+.agendar-card .categoria {
+    color: var(--main-color);
+}
+
+.agendar-card .lista-servicos li {
+    padding: 0.8rem 0.6rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.agendar-card .servico-nome {
+    color: var(--white);
+}
+
+.agendar-card .servico-tempo {
+    color: #9a9a9a;
+}
+
+.agendar-card .servico-preco {
+    color: var(--main-color);
+}
+
+.agendar-card .etiqueta {
+    color: var(--main-color);
+    background: rgba(213, 167, 61, 0.15);
+}
+
+.servico-opcao {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    flex: 1;
+    cursor: pointer;
+}
+
+.servico-opcao input {
+    accent-color: var(--main-color);
+    width: 1.2rem;
+    height: 1.2rem;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.agendar-card .lista-servicos li:has(input:checked) {
+    background: rgba(213, 167, 61, 0.12);
+}
+
 /* Mobile  */
 @media (max-width: 768px) {
 
