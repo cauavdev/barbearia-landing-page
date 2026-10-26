@@ -747,17 +747,17 @@ a.sobre-item:hover {
     }
 
     .agendar-container section {
-        padding-top: 9rem;               /* era 12rem: o header do celular é menor */
-        padding-left: 1rem;              /* era 2rem */
+        padding-top: 9rem;
+        padding-left: 1rem;
         padding-right: 1rem;
     }
 
     .agendar-card {
-        padding: 1rem;                   /* era 2rem */
+        padding: 1rem;
     }
 
     .agendar-titulo {
-        font-size: 2.8rem;               /* o título de 3.5rem é grande pra tela pequena */
+        font-size: 2.8rem;
     }
 
     .agendar-card .lista-servicos li {
