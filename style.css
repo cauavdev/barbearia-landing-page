@@ -663,6 +663,51 @@ a.sobre-item:hover {
     box-shadow: 0 0 0 2px var(--main-color);
 }
 
+.cat-titulo {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+.cat-desc {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--white);
+    margin: 0.5rem 0 1rem;
+    min-height: 2.6rem;
+}
+
+.cat-rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.cat-preco {
+    color: var(--main-color);
+}
+
+.cat-mais {
+    color: var(--white);
+}
+
+.cat-selo {
+    position: absolute;                 /* solta o selo do fluxo e prende no canto do cartão */
+    top: 1rem;
+    right: 1rem;
+    padding: 0.25rem 0.6rem;
+    background: var(--main-color);
+    color: var(--black);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
 /* Mobile  */
 @media (max-width: 768px) {
 
