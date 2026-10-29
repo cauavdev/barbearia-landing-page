@@ -636,7 +636,7 @@ a.sobre-item:hover {
 
 .cat-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.2rem;
     margin-top: 3rem;
 }
@@ -680,8 +680,10 @@ a.sobre-item:hover {
 
 .cat-rodape {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 0.3rem 1rem;
     font-size: 0.85rem;
     font-weight: 600;
 }
@@ -864,5 +866,15 @@ a.sobre-item:hover {
 
     .servico-opcao .servico-preco {
         grid-area: preco;
+    }
+
+    .cat-grid {
+        grid-template-columns: minmax(0, 1fr);
+        margin-top: 2rem;
+    }
+
+    .cat-card {
+        min-height: auto;
+        padding: 1.2rem;
     }
 }
