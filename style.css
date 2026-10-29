@@ -695,7 +695,7 @@ a.sobre-item:hover {
 }
 
 .cat-selo {
-    position: absolute;                 /* solta o selo do fluxo e prende no canto do cartão */
+    position: absolute;
     top: 1rem;
     right: 1rem;
     padding: 0.25rem 0.6rem;
