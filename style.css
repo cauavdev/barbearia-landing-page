@@ -86,10 +86,13 @@ section {
     background: var(--main-color);
     color: #fff;
     padding: 1rem 3rem;
-    font-size: 1.15rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
     cursor: pointer;
     margin-top: 1rem;
     display: inline-block;
+    border-radius: 3px;
+    
 }
 
 .btn:hover {
@@ -710,6 +713,41 @@ a.sobre-item:hover {
     border-radius: 3px;
 }
 
+.cat-paineis {
+    margin-top: 1.2rem;
+}
+
+.cat-painel {
+    background: var(--white);
+    border: 1px solid var(--white);
+    border-top: 3px solid var(--main-color);
+    border-radius: 8px;
+    padding: 1.5rem 2rem 0.8rem;
+    margin: 0;
+    animation: painel-abrir 0.3s ease;
+}
+
+.cat-painel .categoria {
+    margin-top: 0;
+}
+
+.cat-painel .lista-servicos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 3rem;
+}
+
+@keyframes painel-abrir {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Mobile  */
 @media (max-width: 768px) {
 
@@ -876,5 +914,13 @@ a.sobre-item:hover {
     .cat-card {
         min-height: auto;
         padding: 1.2rem;
+    }
+
+    .cat-painel {
+        padding: 1.2rem 1rem 0.5rem;
+    }
+
+    .cat-painel .lista-servicos {
+        grid-template-columns: minmax(0, 1fr);
     }
 }
